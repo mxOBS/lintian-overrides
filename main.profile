@@ -13,9 +13,11 @@ Disable-Tags: dir-or-file-in-opt
 # should care, but don't:
 # - pkg-config-bad-directive (violated by xorg-server 1.16.4-1)
 # - python-script-but-no-python-dep (violated by linux-headers-3.14.79-fslc-imx6-sr/scripts/analyze_suspend.py)
+# - no-debconf-config: violated by libssl1.0.0 and not overridable despite numerous attempts
 Tags: maintainer-address-causes-mail-loops-or-bounces,
       no-human-maintainers,
       description-starts-with-package-name,
       pkg-config-bad-directive,
       python-script-but-no-python-dep,
+      no-debconf-config,
 Severity: pedantic
