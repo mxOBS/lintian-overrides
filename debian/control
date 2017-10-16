@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Josua Mayer <josua.mayer97@gmail.com>
 Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1~)
 Standards-Version: 3.9.5
-Homepage: <insert the upstream URL, if relevant>
+Homepage: https://github.com/mxOBS/lintian-profile-solidrun
 #Vcs-Git: git://anonscm.debian.org/collab-maint/lintian-profile-solidrun.git
 #Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/lintian-profile-solidrun.git;a=summary
 
@@ -12,4 +12,17 @@ Package: lintian-profile-solidrun
 Architecture: all
 Depends: ${misc:Depends}
 Description: SolidRun lintian profile
- Provides a more relaxed lintian profile to be used with software packages by SolidRun.
+ Provides a more relaxed lintian profile to be used with 
+ software packages by SolidRun.
+
+Package: vendor-profile-solidrun
+Architecture: all
+Depends: ${misc:Depends}, lintian-profile-solidrun
+Description: SolidRun vendor profile
+ Provides a dpkg vendor profile to mark SolidRun as the vendor for packages.
+
+Package: vendor-profile-solidrun-default
+Architecture: all
+Depends: ${misc:Depends}, vendor-profile-solidrun
+Description: SolidRun as default vendor
+ Sets SolidRun Ltd. as the default vendor for packages.

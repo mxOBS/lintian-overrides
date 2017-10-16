@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: lintian-profile-solidrun
-Source: <url://example.com>
+Source: https://github.com/mxOBS/lintian-profile-solidrun
 
 Files: *
 Copyright: 2017 Josua Mayer <josua.mayer97@gmail.com>

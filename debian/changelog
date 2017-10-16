@@ -1,3 +1,9 @@
+lintian-profile-solidrun (2) stable; urgency=medium
+
+  * add dpkg vendor profile
+
+ -- Josua Mayer <josua.mayer97@gmail.com>  Mon, 16 Oct 2017 15:52:26 +0200
+
 lintian-profile-solidrun (1) stable; urgency=low
 
   * Initial Release.
